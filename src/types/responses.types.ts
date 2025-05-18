@@ -1,4 +1,4 @@
-import type { IncomingHttpHeaders } from 'http';
+import type { IncomingHttpHeaders } from "http";
 
 export interface TwitterResponse<T> {
   headers: IncomingHttpHeaders;
@@ -14,4 +14,5 @@ export interface SingleTwitterRateLimit {
 
 export interface TwitterRateLimit extends SingleTwitterRateLimit {
   day?: SingleTwitterRateLimit;
+  user?: SingleTwitterRateLimit;
 }
